@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--region General-->
+    <dimen name="first_keyline">16dp</dimen>
+    <dimen name="second_keyline">24dp</dimen>
+    <dimen name="third_keyline">72dp</dimen>
+    <dimen name="content_padding">8dp</dimen>
+    <dimen name="double_content_padding">16dp</dimen>
+    <dimen name="card_elevation">1dp</dimen>
+    <!--endregion General-->
+    <dimen name="item_height">64dp</dimen>
+</resources>

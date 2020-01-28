@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="StateLayout">
+        <attr name="state_empty_layout" format="reference" />
+        <attr name="state_loading_layout" format="reference" />
+        <attr name="initial_animation" format="boolean" />
+        <attr name="default_state" format="reference" />
+        <attr name="state" format="integer" />
+    </declare-styleable>
+</resources>

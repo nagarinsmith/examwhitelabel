@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">ExamWhiteLabel</string>
+
+    <!--region Defaults-->
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="try_again">Try again</string>
+    <string name="edit">Edit</string>
+    <string name="add">Add</string>
+    <string name="delete">Delete</string>
+    <string name="save">Save</string>
+    <!--endregion Defaults-->
+    <string name="no_items">No items</string>
+    <!--region To be changed-->
+    <string name="field1name">Field1</string>
+    <string name="field2name">Field2</string>
+    <string name="field3name">Field3</string>
+    <string name="field4name">Field4</string>
+    <!--endregion To be changed-->
+</resources>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data class=".TheAddOrEditBinding">
+
+        <variable
+            name="viewModel"
+            type="com.examwhitelabel.view.addOrEdit.TheAddOrEditViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/field_1_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/first_keyline"
+            android:layout_marginTop="@dimen/content_padding"
+            android:layout_marginEnd="@dimen/first_keyline"
+            android:hint="@string/field1name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/field_1_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@={viewModel.field1}" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/field_2_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/content_padding"
+            android:hint="@string/field2name"
+            app:layout_constraintEnd_toEndOf="@id/field_1_layout"
+            app:layout_constraintStart_toStartOf="@id/field_1_layout"
+            app:layout_constraintTop_toBottomOf="@id/field_1_layout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/field_2_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@={viewModel.field2}" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/field_3_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/content_padding"
+            android:hint="@string/field3name"
+            app:layout_constraintEnd_toEndOf="@id/field_1_layout"
+            app:layout_constraintStart_toStartOf="@id/field_1_layout"
+            app:layout_constraintTop_toBottomOf="@id/field_2_layout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/field_3_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@={viewModel.field3}" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/field_4_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/content_padding"
+            android:hint="@string/field4name"
+            app:layout_constraintEnd_toEndOf="@id/field_1_layout"
+            app:layout_constraintStart_toStartOf="@id/field_1_layout"
+            app:layout_constraintTop_toBottomOf="@id/field_3_layout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/field_4_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@={viewModel.field4}" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
